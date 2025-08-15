@@ -1,0 +1,47 @@
+.reviews {
+    background-color: map-get($colors, light-gray-c);
+    padding: 100px 0;
+
+    @media (max-width: 1000px) {
+        padding: 60px 0;
+    }
+
+    .review-total {
+        @include flex(column, center, center, nowrap, 50px);
+
+        .reviews-head {
+            h1 {
+                font-weight: 500;
+                font-size: map-get($font-size, font-xl);
+                color: map-get($colors, black-c);
+                text-align: center;
+            }
+        }
+
+        .review-row {
+            @include flex(row, center, center, nowrap, 60px);
+
+            @media (max-width: 1000px) {
+                @include flex(column, center, center, nowrap, 30px);
+            }
+
+            .review {
+                @include flex(column, center, center, nowrap, 14px);
+                width: 400px;
+
+                img {
+                    width: 150px;
+                    height: 82px;
+                }
+
+                h4 {
+                    font-weight: 500;
+                    font-size: map-get($font-size, font-xs);
+                    color: map-get($colors, black-c);
+                    text-align: center;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

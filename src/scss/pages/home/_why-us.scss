@@ -1,0 +1,36 @@
+.why-us {
+    margin: 100px 124px;
+
+    @media (max-width: 1000px) {
+        margin: 60px 0;
+    }
+
+    .why-us-elems {
+        @include flex(row, space-between, center, nowrap, null);
+
+        @media (max-width: 1000px) {
+            @include flex(column, center, center, nowrap, 30px);
+        }
+
+        .why {
+            @include flex(column, center, center, nowrap, 14px);
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+
+            h2 {
+                font-size: map-get($font-size, font-xs);
+                color: map-get($colors, black-c);
+                text-align: center;
+            }
+
+            h3 {
+                font-size: map-get($font-size, font-xs);
+                color: map-get($colors, gray-c);
+                text-align: center;
+            }
+        }
+    }
+}

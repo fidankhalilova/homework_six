@@ -1,0 +1,58 @@
+.discover-more {
+    margin: 80px 124px;
+
+    @media (max-width: 1000px) {
+        margin: 60px 0;
+    }
+
+    .go-links {
+        @include flex(column, center, center, nowrap, 80px);
+
+        .dm-head {
+            @include flex(column, center, center, nowrap, 20px);
+
+            h1 {
+                font-weight: 600;
+                font-size: map-get($font-size, font-xl);
+                color: map-get($colors, black-c);
+                text-align: center;
+            }
+
+            h4 {
+                width: 700px;
+                font-weight: 500;
+                font-size: map-get($font-size, font-xs);
+                color: map-get($colors, gray-c);
+                text-align: center;
+                line-height: 28px;
+            }
+        }
+
+        .directions {
+            @include flex(row, center, center, nowrap, 40px);
+
+            .direct {
+                @include flex(column, center, center, nowrap, 20px);
+
+                .dm-img {
+                    img {
+                        width: 690px;
+                        height: 370px;
+                        object-fit: cover;
+                    }
+                }
+
+                .dm-texts {
+                    @include flex(column, center, center, nowrap, 20px);
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: map-get($font-size, font-md);
+                        color: map-get($colors, black-c);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

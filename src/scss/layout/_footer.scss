@@ -1,0 +1,148 @@
+footer {
+    background-color: map-get($colors, light-gray-c);
+    padding: 100px 124px 50px;
+
+    @media (max-width: 1000px) {
+        padding: 60px 0 10px;
+    }
+
+    .links {
+        @include flex(row, center, flex-start, nowrap, 60px);
+
+        @media (max-width: 1000px) {
+            @include flex(column, center, flex-start, wrap, 30px);
+        }
+
+        .company {
+            @include flex(column, center, flex-start, nowrap, 20px);
+
+            h3 {
+                font-weight: 600;
+                font-size: map-get($font-size, font-md);
+                color: map-get($colors, black-c);
+            }
+
+            #loc {
+                font-size: map-get($font-size, font-xxs);
+                color: map-get($colors, gray-c);
+
+                a {
+                    font-weight: 500;
+                    font-size: map-get($font-size, font-xxs);
+                    color: map-get($colors, black-c);
+                }
+            }
+
+            #number {
+                font-weight: 600;
+                font-size: map-get($font-size, font-xs);
+                color: map-get($colors, black-c);
+            }
+
+            #email {
+                font-size: map-get($font-size, font-xxs);
+                color: map-get($colors, gray-c);
+            }
+        }
+
+        .useful-links {
+            @include flex(column, center, flex-start, null, 16px);
+            width: 300px;
+
+            h3 {
+                font-weight: 600;
+                font-size: map-get($font-size, font-md);
+                color: map-get($colors, black-c);
+            }
+
+            ul {
+                @include flex(column, center, flex-start, null, 15px);
+
+                li {
+                    a {
+                        color: map-get($colors, gray-c);
+
+                        &:hover {
+                            color: map-get($colors, black-c);
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe {
+            @include flex(column, center, flex-start, null, 20px);
+
+            h1 {
+                font-weight: 600;
+                font-size: map-get($font-size, font-xl);
+                color: map-get($colors, black-c);
+            }
+
+            p {
+                font-size: map-get($font-size, font-xs);
+                color: map-get($colors, gray-c);
+                line-height: 30px;
+            }
+
+            .enter-email {
+                @include flex(row, flex-start, center, nowrap, 0px);
+                width: 450px;
+
+                input {
+                    padding: 20px 34px;
+                    border-radius: 2px;
+                    border: none;
+                    width: 400px;
+
+                    &::placeholder {
+                        font-size: map-get($font-size, font-xs);
+                        color: map-get($colors, gray-c);
+                        font-family: $base-font;
+                    }
+                }
+            }
+        }
+    }
+
+    .last-part {
+        margin-top: 60px;
+
+        @media (max-width: 1000px) {
+            margin-top: 30px;
+        }
+
+        @include flex(row, space-between, center, wrap, 50px);
+
+        p {
+            font-weight: 500;
+            font-size: map-get($font-size, font-xs);
+            color: map-get($colors, gray-c);
+        }
+
+        .socials {
+            @include flex(row, center, center, nowrap, 15px);
+
+            i {
+                font-size: map-get($font-size, font-sm);
+                color: map-get($colors, black-c);
+            }
+        }
+
+        .logo {
+            @include flex(row, center, center, nowrap, null);
+
+            img {
+                max-width: 190px;
+            }
+        }
+
+        .payments {
+            @include flex(row, center, center, nowrap, null);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
