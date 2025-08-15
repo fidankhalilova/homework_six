@@ -46,7 +46,13 @@
                 top: 40px;
                 left: 30px;
                 width: 400px;
-                @include flex(column, center, flex-start, nowrap, 10px);
+                @include flex(column, center, flex-start, wrap, 10px);
+
+                @media (max-width: 1000px) {
+                    @include flex(column, center, flex-start, wrap, 5px);
+                    width: 100%;
+                    top: 30px;
+                }
 
                 h5 {
                     font-size: map-get($font-size, font-xxs);

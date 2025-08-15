@@ -3,7 +3,7 @@ footer {
     padding: 100px 124px 50px;
 
     @media (max-width: 1000px) {
-        padding: 60px 0 10px;
+        padding: 60px 20px 10px;
     }
 
     .links {
@@ -89,11 +89,19 @@ footer {
                 @include flex(row, flex-start, center, nowrap, 0px);
                 width: 450px;
 
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
+
                 input {
                     padding: 20px 34px;
                     border-radius: 2px;
                     border: none;
                     width: 400px;
+
+                    @media (max-width: 1000px) {
+                        width: 100%;
+                    }
 
                     &::placeholder {
                         font-size: map-get($font-size, font-xs);

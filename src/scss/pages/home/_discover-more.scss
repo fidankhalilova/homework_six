@@ -25,11 +25,19 @@
                 color: map-get($colors, gray-c);
                 text-align: center;
                 line-height: 28px;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
             }
         }
 
         .directions {
             @include flex(row, center, center, nowrap, 40px);
+
+            @media (max-width: 1000px) {
+                @include flex(column, center, center, nowrap, 40px);
+            }
 
             .direct {
                 @include flex(column, center, center, nowrap, 20px);

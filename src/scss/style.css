@@ -303,7 +303,7 @@ footer {
 }
 @media (max-width: 1000px) {
   footer {
-    padding: 60px 0 10px;
+    padding: 60px 20px 10px;
   }
 }
 footer .links {
@@ -407,11 +407,21 @@ footer .links .subscribe .enter-email {
   gap: 0px;
   width: 450px;
 }
+@media (max-width: 1000px) {
+  footer .links .subscribe .enter-email {
+    width: 100%;
+  }
+}
 footer .links .subscribe .enter-email input {
   padding: 20px 34px;
   border-radius: 2px;
   border: none;
   width: 400px;
+}
+@media (max-width: 1000px) {
+  footer .links .subscribe .enter-email input {
+    width: 100%;
+  }
 }
 footer .links .subscribe .enter-email input::-moz-placeholder {
   font-size: 16px;
@@ -652,8 +662,20 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 10px;
+}
+@media (max-width: 1000px) {
+  .sales .sales-cards .cardd .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    top: 30px;
+  }
 }
 .sales .sales-cards .cardd .card-text h5 {
   font-size: 15px;
@@ -808,6 +830,16 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   flex-wrap: nowrap;
   gap: 16px;
 }
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
 .customer-favs .cf-all .cf-head h1 {
   font-weight: 600;
   font-size: 40px;
@@ -820,6 +852,11 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   color: #7E7E7E;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-head h4 {
+    line-height: 30px;
+  }
+}
 .customer-favs .cf-all .cf-posts {
   display: flex;
   flex-direction: row;
@@ -828,8 +865,23 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   flex-wrap: nowrap;
   gap: 30px;
 }
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .customer-favs .cf-all .cf-posts .cf-post-main .cardd {
   position: relative;
+}
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-post-main .cardd {
+    width: 100%;
+  }
 }
 .customer-favs .cf-all .cf-posts .cf-post-main .cardd .card-img {
   position: relative;
@@ -846,7 +898,7 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
 @media (max-width: 1000px) {
   .customer-favs .cf-all .cf-posts .cf-post-main .cardd .card-img img, .customer-favs .cf-all .cf-posts .cf-post-main .cardd .card-img:hover img {
     width: 100%;
-    height: 100%;
+    height: 830px;
   }
 }
 .customer-favs .cf-all .cf-posts .cf-post-main .cardd .card-img:hover img {
@@ -901,13 +953,43 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   flex-wrap: nowrap;
   gap: 20px;
 }
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 36px;
+  }
+}
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .prod-img {
+    width: 100%;
+  }
+}
 .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .prod-img img {
   width: 250px;
   height: 334px;
 }
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .prod-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .hovr-img, .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .prod-img:hover .hovr-img {
+    width: 100%;
+  }
+}
 .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .hovr-img img {
   width: 250px;
   height: 334px;
+}
+@media (max-width: 1000px) {
+  .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .hovr-img img {
+    width: 100%;
+  }
 }
 .customer-favs .cf-all .cf-posts .cf-posts-others .cf-row .product .act-row i {
   font-size: 18px;
@@ -952,6 +1034,11 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   text-align: center;
   line-height: 28px;
 }
+@media (max-width: 1000px) {
+  .discover-more .go-links .dm-head h4 {
+    width: 100%;
+  }
+}
 .discover-more .go-links .directions {
   display: flex;
   flex-direction: row;
@@ -959,6 +1046,16 @@ footer .last-part .payments img, footer .last-part .payments .customer-favs .cf-
   align-items: center;
   flex-wrap: nowrap;
   gap: 40px;
+}
+@media (max-width: 1000px) {
+  .discover-more .go-links .directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
 }
 .discover-more .go-links .directions .direct {
   display: flex;
